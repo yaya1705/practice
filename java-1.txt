@@ -1,0 +1,83 @@
+1章　プログラムの書き方
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("RPG: スッキリ魔王征伐");
+    System.out.println("Ver.0.1 by 湊");
+    System.out.println("＜ただいま鋭意学習・制作中＞");
+    System.out.println("プログラムを終了します");
+  }
+
+}
+
+- Main = クラス名
+
+- クラスブロック
+public static void main(String[] args) {
+    System.out.println("RPG: スッキリ魔王征伐");
+    System.out.println("Ver.0.1 by 湊");
+    System.out.println("＜ただいま鋭意学習・制作中＞");
+    System.out.println("プログラムを終了します");
+  }
+
+- メソッドクラス
+   System.out.println("RPG: スッキリ魔王征伐");
+    System.out.println("Ver.0.1 by 湊");
+    System.out.println("＜ただいま鋭意学習・制作中＞");
+    System.out.println("プログラムを終了します");
+
+- ソースファイル名は「クラス名.java」にする
+- クラス名はアルファベット大文字で始める
+
+---------------------------------------------------
+
+javaプログラムの書き始め方
+
+ソースファイル　MyDiary.java 
+
+public class MyDiary {
+  public static void main(String[] args) {
+    System.out.println("日記ソフト");
+
+    System.out.println("終了します");
+  }
+
+}
+
+public class 〇〇(クラス名) {
+public static void main (String[]args) {
+
+  }
+} 
+
+
+- コメントアウト
+
+/* コメント本文(複数行でも可) */
+// コメント本文(行末まで)
+
+----------------------------------------------------------
+
+main メソッドの中身
+
+メソッドブロック内部　＝　mainメソッド　とも呼ぶ
+
+*　文末には　;(セミコロン)をつけるのがルール
+
+public class Main {
+  public static void main(String[] args) {
+    int version;      ------- ①
+    version = 1 + 5;　　　　　　------- ②
+    System.out.println("ver" + version );　　　　------- ③
+    System.out.println("まだ開発中です");
+    System.out.println("終了します");
+  }
+
+}
+
+①　変数の宣言
+②　計算の文
+③　命令実行の文
+
+
+
