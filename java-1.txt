@@ -75,9 +75,75 @@ public class Main {
 
 }
 
-①　変数の宣言
+①　変数の宣言の文
 ②　計算の文
 ③　命令実行の文
 
 
+-------------------------------------------------------------
 
+①  変数宣言の文
+
+public class Main {
+  public static void main(String[] args) {
+    int age;      ----　変数宣言の文(ageという箱を用意)
+    age = 30;　　　　　　----　箱に数字の「30」を入れる
+    System.out.println(age);　　　　----　箱の中を表示
+  }
+}
+
+実行結果　　30
+
+--------------------------------------------------------------
+
+データ型
+
+int = 「整数」を表す型(整数)　*rails でいうinteger
+double = 「小数」を表す型
+String = 文字の並び(文字列)
+boolean = true or false で二択の情報を代入
+char = '' シングルクォーテーション
+String = ""　ダブルクォーテーション
+
+--------------------------------------------------------------
+
+変数の初期化
+
+int age;  ------ 変数宣言の文
+age = 22;  ------ ageに「22」を代入
+
+int age = 22;    -------変数宣言と代入を1行で行う
+このことを「変数の初期化」と呼ぶ
+
+---------------------------------------------------------------
+変数の再代入
+
+public class Main {
+  public static void main (String[] args) {
+    int age = 20;
+    System.out.println("私の年齢は" + age );
+    age = "31"
+    System.out.println("‥いや、本当の年齢は" + age );
+  }
+}
+
+実行結果
+
+私の年齢は20
+‥いや、本当の年齢は31
+
+--------------------------------------------------------------------
+
+定数の宣言
+
+final 型　定数名 = 初期値;
+* 宣言と同時に初期値が代入された後は値を書き換える事ができない
+
+public class Main {
+  public static void main (String[] args) {
+    final double PI = 3.14;
+    int pie = 5;
+    System.out.println("半径"+ pie +"cmのパイの面積は、");
+    System.out.println(pie * pie * PI);
+  }
+}
