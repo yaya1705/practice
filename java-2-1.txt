@@ -1,0 +1,74 @@
+計算文とは？
+
+public class Main {
+	public static void main(String[] args) {
+    int a ;
+    int b;
+    a = 20;
+    b = a+ 5;
+		System.out.println(a);
+    System.out.println(b);
+	}
+}
+
+実行結果
+20
+25
+
+計算式の構成
+
+a + b 
+1 + 5
+(オペランド = a,b,1,5　+,-,=./,* = 演算子)
+
+
+-----------------------------------------------
+
+リテラル
+
+ソースコードに記載されている具体的な値を"リテラル"と呼ぶ
+
+リテラルの種類/表記例　　データ型
+
+30                   int(小数点のない数字)
+30000L(l)            long(小数点がない数字で末尾がL,l)
+30.5                 double(小数点つきの数字)
+30.5F(f)             float(小数点付きの数字で末尾がF,f)
+true(false)          boolean(true,false)
+'雅'                 char(引用符で囲まれた文字)
+"java"               String(二重引用符で囲まれた文字列)
+
+
+--------------------------------------------------
+
+エスケープシーケンス
+
+String型やchar型のリテラルを記述する際に時々用いられる。
+『¥記号とそれに続く1文字』の合計2文字による記述方法でその2文字で特殊な1文字を表現します。
+
+表記　　　　　意味
+
+¥"　　　　　二重引用符記号("")
+¥'　       引用符記号(')　　　　　
+¥¥　       円記号(¥)
+¥n　　　　　改行(制御文字)
+
+悪い例
+
+public class Main {
+	public static void main(String[] args) {
+    System.out.println("私の好きな記号は二重引用符(”)です");
+	}　　　　　　　　　　　　　ーーーーーーーーーーーーーー
+  　　　　　　　　　　　*ここを文字列と判断してしまう
+}
+
+良い例
+
+public class Main {
+	public static void main(String[] args) {
+    System.out.println("私の好きな記号は二重引用符(¥”)です");
+	}　　　　　　　　　　　　　ーーーーーーーーーーーーーー
+                         ¥"によって二重引用符は文字列と見做される
+}
+
+
